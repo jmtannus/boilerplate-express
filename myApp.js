@@ -3,7 +3,7 @@ let app = express();
 
 console.log("Hello world");
 
-app.use("/public2", express.static(__dirname + "/public"));
+app.use("/public", express.static(__dirname + "/public"));
 
 app.get("/", (request, response) => {
   response.send("Hello Express 3");
